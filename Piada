@@ -1,0 +1,12 @@
+import math
+nome = (input("Entre com o teu primeiro nome:\n"))
+nomecorreto = nome.title()
+tamanho=len(nomecorreto)
+print(f'\nO teu primeiro nome é {nomecorreto} e ele possui {tamanho} caracteres\n')
+nomec = (input("Agora entre com o teu nome completo:\n"))
+tamanhoc=len(nomec)
+#piada1=nomec[tamanho+1:]
+piada1=nomec.split(" ")[1:]
+myseparator=" "
+piada2=myseparator.join(piada1)
+print(f'\nO teu nome é completo é Josivaldo {piada2} e ele possui {tamanhoc} caracteres\n')
